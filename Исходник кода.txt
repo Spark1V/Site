@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+
+		body,
+		p,
+		h1,
+		h2,
+		ul,
+		ol {
+			margin: 0;
+			padding: 0;
+		}
+
+		body {
+			font-family: Arial;
+		}
+
+		@media (max-width: 768px) {
+			.center2 {
+				font-size: 9px;
+				width: 800px;
+				padding: 10px;
+				margin: 0 auto;
+				background-color: #195f04;
+				text-align: center;
+				line-height: 0.7rem;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				color: rgba(207, 209, 207, 0.7)
+			}
+		}
+
+		@media (min-width: 768px) {
+			.center2 {
+				width: 800px;
+				padding: 10px;
+				margin: 0 auto;
+				background-color: #195f04;
+				text-align: center;
+				font-size: 10px;
+				line-height: 0.7rem;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				color: rgba(207, 209, 207, 0.7)
+			}
+		}
+
+		.center1 {
+			width: 800px;
+			padding: 10px;
+			margin: 0 auto;
+			display: flex;
+			background-color: gold;
+			letter-spacing: -2px;
+		}
+
+		.center1 img {
+			width: 80px;
+			height: 80px;
+			border: 1px solid red;
+		}
+
+		.center1 p {
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin-left: auto;
+			margin-top: 10px;
+			background-color: rgb(24, 202, 24);
+			font: 16px/50px impact;
+			color: white;
+			text-align: center;
+		}
+
+		#menu {
+			display: flex;
+			justify-content: center;
+			margin-top: 10px;
+
+		}
+
+		#menu a {
+			margin-right: 25px;
+			margin-left: 25px;
+			padding: 10px;
+			font: 15px Arial;
+			text-decoration: none;
+			color: white;
+			background-color: #195f04;
+
+		}
+
+		#menu a:hover {
+			color: blue;
+			background-color: #F5F6FA;
+		}
+
+		.wrapper h2 {
+			margin-bottom: 30px;
+			text-align: center;
+			font-size: 27px;
+		}
+
+		.wrapper p {
+			margin-bottom: 10px;
+			text-align: justify;
+			font-size: 16px;
+		}
+
+
+
+		#header {
+			background: #fff;
+		}
+
+		.onew {
+			color: green;
+			margin-left: 15px;
+			text-shadow: 5px 5px 3px black;
+		}
+
+		.center3 {
+			width: 800px;
+			height: 200px;
+			margin: 0 auto;
+			background-color: #195f04;
+			opacity: 0.5 #195f04;
+			text-align: center;
+			background-image: url(/img/zkpUFQkvBxI.jpg);
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		#elem {
+			width: 800px;
+			height: 200px;
+
+			padding: 10px;
+			font-size: 50px;
+			font-weight: bold;
+			color: white;
+			background-color: rgba(0, 120, 0, 0.7);
+		}
+
+		#btn {
+			background-color: #FF8040;
+			width: 350px;
+			height: 50px;
+			border-radius: 10%;
+			color: white;
+			font-family: impact;
+			font-size: x-large;
+			margin-top: 10px;
+			cursor: pointer;
+		}
+
+		#header h1 {
+			font-size: 55px;
+			margin-bottom: 7px;
+			text-align: left;
+			font-family: Impact;
+		}
+
+		#header p {
+			font-size: 21px;
+			margin-bottom: 5px;
+			text-align: center;
+		}
+
+		.center4 {
+			width: 800px;
+			padding: 5px;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.bt {
+			width: 100px;
+		}
+
+		.parent {
+			display: flex;
+			justify-content: space-around;
+			align-items: baseline;
+
+			flex-wrap: wrap;
+			width: 800px;
+
+			margin: 0 auto;
+
+		}
+
+		.child {
+			box-sizing: border-box;
+			width: 130px;
+			height: 130px;
+			margin-right: 10px;
+			margin-bottom: 10px;
+			margin: 10px;
+			margin-left: 50px;
+
+		}
+
+		.child:nth-child(3n) {
+			margin-right: 60px;
+		}
+
+		#i1,
+		#i2,
+		#i3,
+		#i4,
+		#i5,
+		#i6,
+		img {
+			width: 130px;
+			height: 130px;
+			opacity: 0.7;
+		}
+
+		@media (max-width: 768px) {
+			#footer {
+				margin: 0 auto;
+				color: gray;
+				text-align: center;
+				font-size: 9px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			#footer {
+				width: 800px;
+				margin: 0 auto;
+				color: gray;
+				text-align: center;
+				font-size: 10px;
+				line-height: 20px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="header" class="wrapper">
+		<div class="center1">
+			<img src="/img/white-male-1816195_1920-300x300.jpg" alt="Shade Image">
+			<div class="clearfix"></div>
+			<h1><span class="onew">My</span><span class="twob">Workout</h1>
+			<p>18+</p>
+		</div>
+	</div>
+	<div id="content" class="wrapper">
+		<div class="center2">
+			Нажатием на кнопку "Смотреть" Вы подтверждаете свое согласие с подключением <br>
+			подписки SUBNAME и <a href="#">Условиями предоставления подписки</a>. Стоимость подписки <br>
+			SUBPRICE. ACCOUNT. Услуга предоставляется Контент-провайдером PROVIDER.
+			<div id="menu">
+				<a href="#">ПП питание</a>
+				<a href="#">Тренировки</a>
+				<a href="#">Калькулятор калорий</a>
+			</div>
+		</div>
+	</div>
+	<div id="contacts" class="wrapper">
+		<div class="center3">
+			<div id="elem">
+				<h2>Упражнения<br>
+					и тренировки<br>
+					на карантине</h2>
+				<input type='button' id="btn" value="СМОТРЕТЬ УПРАЖНЕНИЯ">
+			</div>
+		</div>
+	</div>
+	<div id="company" class="wrapper">
+		<div class="center4">
+			<button class="bt" disabled>Отмена</button>
+		</div>
+		<div class="parent">
+			<div id="i1" class="child"><img src="/img/47581944570b17aca6cfd5611489c439.jpg"></div>
+			<div id="i2" class="child"><img src="/img/81587d027824bf388eade9d255e09f7f.jpg"></div>
+			<div id="i3" class="child"><img src="/img/programs_10.jpg"></div>
+			<div id="i4" class="child"><img src="/img/programs_17.jpg"></div>
+			<div id="i5" class="child"><img src="/img/programs_23.jpg"></div>
+			<div id="i6" class="child"></div>
+		</div>
+	</div>
+	<div id="footer" class="wrapper">
+
+		<div class="center">
+			Информация для абонентов - тел. 8 800 500-25-43 (бесплатно в домашнем регионе) |<br>
+			<a href="">Правила подписки поставщика услуг</a> | <a href="ХХХ">Личный кабинет</a>
+		</div>
+	</div>
+
+	<script>
+
+	</script>
+
+</body>
+
+</html>
